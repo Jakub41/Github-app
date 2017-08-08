@@ -1,17 +1,21 @@
 <md-toolbar class="app-header" color="primary">
-    <span class="header-span" fxShow fxHide.xs="true">
+    <span class="header-span" fxShow fxHide.xs="false">
       <a routerLink="/home" routerLinkActive="active">
         <fa [name]="'github'" [border]=false [size]=2></fa>
+        <h1 fxShow fxHide.xs="true">Welcome, {{ username }}</h1>
       </a>
     </span>
     <span class="fill-remaining-space" fxShow fxHide.xs="true"></span>
     <md-input-container color="secondary">
-        <input mdInput placeholder="Search for github user" (keyup)="searchChanged(search.value)" #search>
+        <md-placeholder>
+            <fa [name]="'search'" [border]=false></fa>
+            Search for github user
+        </md-placeholder>
+        <input mdInput (keyup)="searchChanged(search.value)" #search>
     </md-input-container>
     <span class="fill-remaining-space"></span>
     <span class="header-span" *ngIf="username">
-      <h1>Welcome, {{username}}</h1>
-      <a routerLink="."  routerLinkActive="active" (click)="logout()"><fa [name]="'power-off'" [border]=false [size]=2></fa></a>
+      <a routerLink="."  routerLinkActive="active" (click)="logout()" mdTooltip="Logout!" mdTooltipPosition="left"><fa [name]="'power-off'" [border]=false [size]=2></fa></a>
     </span>
 </md-toolbar>
 <div class="search-container">
