@@ -1,0 +1,9 @@
+<div class="dashboard-component" *ngIf="user && myRepos">
+
+  <app-header [user]="user"></app-header>
+
+  <div class="dashboard-body">
+    <app-user-details [user]="user" [repos]="myRepos"></app-user-details>
+  </div>
+
+</div>
