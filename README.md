@@ -38,6 +38,9 @@ This means it can start the serve (port 8080), and then run the client with `ng 
 
 then navigate to http://localhost:4200 in your local browser.
 
+For admin navigate to http://localhost:4200/admin. 
+For change the admin user please go to the file server.js and in the bottom change to your Github Username. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
 ## Technologies
