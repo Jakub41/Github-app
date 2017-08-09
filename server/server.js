@@ -8,14 +8,14 @@ const fileAsync = require('lowdb/lib/storages/file-async')
 
 //Dev
 var githubCredentials = {
-        clientId: 'a096d3ce655c4f0a806f',
-        clientSecret: 'c2d6d65d16c09fa078b2854d5ff8ec7d88d3ab40'
-    }
-    //Production
-    // var githubCredentials = {
-    //     clientId: '61978f9947c57a58d010',
-    //     clientSecret: '0205e918dee14ea4325aa35b6aabfd314428ca12'
-    // }
+    clientId: 'a096d3ce655c4f0a806f',
+    clientSecret: 'c2d6d65d16c09fa078b2854d5ff8ec7d88d3ab40'
+};
+//Production
+// var githubCredentials = {
+//     clientId: '61978f9947c57a58d010',
+//     clientSecret: '0205e918dee14ea4325aa35b6aabfd314428ca12'
+// }
 
 //Initialise express (the web server)
 var app = express();
