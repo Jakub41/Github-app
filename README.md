@@ -43,6 +43,12 @@ For change the admin user please go to the file server.js and in the bottom chan
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
+## Remote access
+
+This is the link to the online version https://githubapp-ab10e.firebaseapp.com/
+
+There is an issue so the app is not working and one of todo fix. 
+
 ## Technologies
 Runs using typescript, scss and html as the three main languages.
 Further to this, you can view additional packages in the package.json file.
