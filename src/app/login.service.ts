@@ -23,7 +23,7 @@ export class LoginService {
     // Dev
     // localServer: "http://localhost:8080/api/"
     // Prod
-    localserver: 'https://whispering-taiga-67548.herokuapp.com:8080/api/'
+    localServer: 'https://whispering-taiga-67548.herokuapp.com:8080/api/'
   };
 
   constructor( private http: Http ) { }
