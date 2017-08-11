@@ -10,7 +10,13 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "server": "node ./server/server.js",
+        "deploy": "git push origin master && git push heroku master",
         "postinstall": "ng build --aot -prod"
+
+    },
+    "engines": {
+        "node": "6.11.1",
+        "npm": "5.3.0"
     },
     "private": true,
     "dependencies": {
