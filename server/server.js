@@ -102,7 +102,7 @@ router.get('/server/accesslog', function(request, response) {
 
 router.get('/admin/auth/:username', function(request, response) {
     let username = request.params.username;
-    if (username == "StormBurpee")
+    if (username == "Jakub41")
         response.json({ auth: true });
     else {
         response.json({ auth: false });
